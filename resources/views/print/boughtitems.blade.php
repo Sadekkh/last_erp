@@ -3,7 +3,7 @@
     <div class="card-body">
         <center>
             <h3>{{ __('bought_items') }} <br>
-                {{ $start }}-{{ $end }}</h3>
+                {{ date('d-m-Y', strtotime($start)) }}_/_{{ date('d-m-Y', strtotime($end)) }}</h3>
         </center>
     </div>
     <div class="table-responsive-sm">
